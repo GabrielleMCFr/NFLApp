@@ -36,7 +36,13 @@ namespace Leagues.Pages.Players
                 return NotFound();
             }
             Player = player;
-           ViewData["TeamId"] = new SelectList(_context.Teams, "TeamId", "TeamId");
+            ViewData["TeamId"] = new SelectList(_context.Teams, "TeamId", "Name");
+            IQueryable<string> positionQuery = from p in _context.Players
+                                               orderby p.Position
+                                               select p.Position;
+
+            ViewData["Positions"] = new SelectList(await positionQuery.Distinct().ToListAsync());
+
             return Page();
         }
 
