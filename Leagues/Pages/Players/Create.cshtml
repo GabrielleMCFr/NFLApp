@@ -1,0 +1,118 @@
+@page
+@model Leagues.Pages.Players.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Player</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Player.PlayerId" class="control-label"></label>
+                <input asp-for="Player.PlayerId" class="form-control" />
+                <span asp-validation-for="Player.PlayerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.TeamId" class="control-label"></label>
+                <select asp-for="Player.TeamId" class ="form-control" asp-items="ViewBag.TeamId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Number" class="control-label"></label>
+                <input asp-for="Player.Number" class="form-control" />
+                <span asp-validation-for="Player.Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Position" class="control-label"></label>
+                <input asp-for="Player.Position" class="form-control" />
+                <span asp-validation-for="Player.Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Name" class="control-label"></label>
+                <input asp-for="Player.Name" class="form-control" />
+                <span asp-validation-for="Player.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Height" class="control-label"></label>
+                <input asp-for="Player.Height" class="form-control" />
+                <span asp-validation-for="Player.Height" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Weight" class="control-label"></label>
+                <input asp-for="Player.Weight" class="form-control" />
+                <span asp-validation-for="Player.Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Age" class="control-label"></label>
+                <input asp-for="Player.Age" class="form-control" />
+                <span asp-validation-for="Player.Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.BirthDate" class="control-label"></label>
+                <input asp-for="Player.BirthDate" class="form-control" />
+                <span asp-validation-for="Player.BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Experience" class="control-label"></label>
+                <input asp-for="Player.Experience" class="form-control" />
+                <span asp-validation-for="Player.Experience" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.DraftYear" class="control-label"></label>
+                <input asp-for="Player.DraftYear" class="form-control" />
+                <span asp-validation-for="Player.DraftYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.DraftRound" class="control-label"></label>
+                <input asp-for="Player.DraftRound" class="form-control" />
+                <span asp-validation-for="Player.DraftRound" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.DraftPick" class="control-label"></label>
+                <input asp-for="Player.DraftPick" class="form-control" />
+                <span asp-validation-for="Player.DraftPick" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.College" class="control-label"></label>
+                <input asp-for="Player.College" class="form-control" />
+                <span asp-validation-for="Player.College" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.State" class="control-label"></label>
+                <input asp-for="Player.State" class="form-control" />
+                <span asp-validation-for="Player.State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Rank" class="control-label"></label>
+                <input asp-for="Player.Rank" class="form-control" />
+                <span asp-validation-for="Player.Rank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Rating" class="control-label"></label>
+                <input asp-for="Player.Rating" class="form-control" />
+                <span asp-validation-for="Player.Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Depth" class="control-label"></label>
+                <input asp-for="Player.Depth" class="form-control" />
+                <span asp-validation-for="Player.Depth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

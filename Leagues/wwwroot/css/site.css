@@ -1,0 +1,167 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+    width: 100%;
+    min-width: 200px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #F8F8F8;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    
+}
+
+/* grid styles
+-------------------------------------------------- */
+
+section.grid {
+    font-size: smaller;
+}
+
+    section.grid a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+        section.grid a:hover {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+    section.grid a {
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+    }
+
+.starter {
+    font-weight: bold;
+}
+
+.favorite {
+    background-color: gold;
+}
+
+.conference-title {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3rem !important;
+}
+
+.grid-header {
+    font-weight: bold;
+    padding: 0.2rem;
+    font-size: large;
+}
+
+.background-custom {
+    background-color: #CC4141;
+}
+
+/* Home page styles
+-------------------------------------------------- */
+
+#index-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: -5vh;
+}
+
+#app-index-header {
+    background: url('../image/nflwallpaper.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.8rem;
+    
+}
+
+#index-h1 {
+    padding: 2rem 1rem 0 1rem;
+    font-size: 4rem;
+}
+
+#index-p {
+    padding: 0 1rem 0 1rem;
+}
+
+.footer {
+    margin-top: -3vh !important;
+}
