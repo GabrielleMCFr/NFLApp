@@ -11,26 +11,27 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
+        <p>The fields with an "*" can't be left empty.</p>
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Player.PlayerId" />
             <div class="form-group">
-                <label asp-for="Player.TeamId" class="control-label"></label>
+                <label class="control-label">Team *</label>
                 <select asp-for="Player.TeamId" class="form-control" asp-items="ViewBag.TeamId"></select>
                 <span asp-validation-for="Player.TeamId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Player.Number" class="control-label"></label>
+                <label class="control-label">Number *</label>
                 <input asp-for="Player.Number" class="form-control" />
                 <span asp-validation-for="Player.Number" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Player.Position" class="control-label"></label>
+                <label class="control-label">Position *</label>
                 <select asp-for="Player.Position" class="form-control" asp-items="ViewBag.Positions"></select>
                 <span asp-validation-for="Player.Position" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Player.Name" class="control-label"></label>
+                <label class="control-label">Name *</label>
                 <input asp-for="Player.Name" class="form-control" />
                 <span asp-validation-for="Player.Name" class="text-danger"></span>
             </div>
@@ -99,14 +100,15 @@
                 <input asp-for="Player.Depth" class="form-control" />
                 <span asp-validation-for="Player.Depth" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-
-<div>
+<br />
+<div class="back-list">
     <a asp-page="./Index">Back to List</a>
 </div>
 

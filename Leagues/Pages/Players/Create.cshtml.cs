@@ -42,11 +42,17 @@ namespace Leagues.Pages.Players
             {
                 return Page();
             }
+            
 
             _context.Players.Add(Player);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
+        }
+
+        public string generateId()
+        {
+            return Guid.NewGuid().ToString("N");
         }
     }
 }
