@@ -31,11 +31,12 @@ using (var scope = app.Services.CreateScope())
     // context.Database.EnsureCreated();
     DbInitializer.Initialize(context);
 
-    //var players = context.Players.ToList();
-    //if (players.Count == 0)
-    //{
-    //    AddPlayers.AddAllPlayers(context);
-    //}
+    // ensure players have been inserted into the db
+    var players = context.Players.ToList();
+    if (players.Count == 0)
+    {
+        AddPlayers.AddAllPlayers(context);
+    }
 }
 
 // Configure the HTTP request pipeline.
